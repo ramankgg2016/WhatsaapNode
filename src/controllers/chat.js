@@ -86,7 +86,7 @@ const menuSchema = new mongoose.Schema({
 export const MenuModel = mongoose.model('Menu', menuSchema);
 
 //mongoose connection 
-mongoose.connect('mongodb://localhost:27017/whatsapp', {
+mongoose.connect('mongodb+srv://admin:admin@cluster0.kecoayn.mongodb.net/whatsapp', {
   useNewUrlParser: true,
 }).then(() => console.log('MongoDB Connected'))
   .catch((err) => console.log(err));
